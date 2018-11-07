@@ -10,7 +10,7 @@
 # -------------------------------------------------------------------------------
 
 #app路径
-LocalDir='/opt/app'
+app_dir='/opt/app'
 
 #netty项目路径
 nettyDir='/opt/app/netty'

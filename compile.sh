@@ -28,6 +28,3 @@ workspaces=$(dirname "$0")
 
 #项目名
 app=$1
-
-
-

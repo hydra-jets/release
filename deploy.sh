@@ -1,33 +1,14 @@
 #!/bin/bash
 
 # -------------------------------------------------------------------------------
-# Filename:    start-app.sh
-# Version:     0.1
+# Filename:    deploy.sh 
+# Version:     1.0
 # Date:        2018-11-07
 # Author:      LiuBaoWen
 # Email:       bwliush@cn.ibm.com
 # Description: 
 # Notes:       
 # -------------------------------------------------------------------------------
-
-#一，编译项目源码
-#
-#二，停止旧的应用
-#
-#三，备份旧的应用
-#
-#四，移动新应用，启动新应用
-#
-#五，检查是否启动成功
-#
-#六，启动成功则结束，启动失败则回滚
-
-workspaces=$(dirname "$0")
-
-. $workspaces/common-constants
-
-#项目名
-app=$1
 
 #v0.4 增加端口检测
 #v0.5 修改jvm参数 
@@ -247,5 +228,3 @@ CheckProjectStatus $1 $2
 echo "---->1.9 备份、清理$2项目代码"
 Bakproject $1 $2
 sleep 1
-
-
