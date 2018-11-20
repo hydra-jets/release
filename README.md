@@ -17,3 +17,6 @@ javaEE 项目发布步骤
 依赖: jdk, maven or gradle, nexus
 
 /opt/app/server/start-monitor1.sh osp-campaign-web
+# release
+持续发布程序
+
